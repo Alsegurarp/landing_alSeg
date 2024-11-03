@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton+SC&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Rozha+One&display=swap');
+
+.rozha-one-regular {
+    font-family: "Rozha One", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.abril-fatface-regular {
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+.dm-mono-regular{
+    font-family: "DM Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+*{margin: 0;
+padding: 0;}
+
+body{
+    height: 350vh;
+    width: 100%;
+}
+section.pag1{
+    background-color: black;
+    height: 80vh;
+}
+
+.draggable {
+    width: 300px;
+    height: 450px;
+    background-color: #155C26;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: 4px 4px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: grab;
+    position: absolute; /* Necesario para mover libremente */
+    flex-direction: column;
+}
+.draggable:nth-child(2){
+    width: 300px;
+    height: 250px;
+    background-color: #E4E3CF;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: 4px 4px;
+    justify-content: space-around;
+}
+.draggable:nth-child(3){
+    width: 300px;
+    height: 150px;
+    background-color: #155C26;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: 4px 4px;
+    justify-content: space-around;
+}
+.draggable:nth-child(4){
+    width: 300px;
+    height: 300px;
+    background-color: #E4E3CF;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: 4px 4px;
+    justify-content: space-around;
+}
+.draggable:nth-child(5){
+    width: 300px;
+    height: 150px;
+    background-color: #155C26;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: 4px 4px;
+    justify-content: space-around;
+}
+
+p.draggable1-p{
+    width: 80%;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+p.draggable2-p{
+    width: 80%;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+p.draggable3-p{
+    width: 80%;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+p.draggable4-p{
+    width: 80%;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+
+
+
+
+.button {
+    width: 100px;
+    padding: 0;
+    border: none;
+    transform-origin: center;
+    font-family: "Rozha One", serif;
+    text-decoration: none;
+    font-size: 12px;
+    cursor: pointer;
+    padding-bottom: 3px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 0 #494a4b;
+    background-color: red;
+
+  }
+  
+  .button span {
+    background: #f1f5f8;
+    display: block;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: 2px solid #494a4b;
+  }
+  
+  .button:active {
+    transform: translateY(5px);
+    padding-bottom: 0px;
+    outline: 0;
+  }
+  
+
+
+
+section.pag1-scroll{
+    background-color: #D9D9D9;
+    height: 4vh;
+    width: auto;
+}
+
+section.pag1-scroll .ticker {  
+    font-size: 16px;  
+    overflow: hidden;  
+    width: 100%;  
+    font-family: sans-serif;  
+    position:relative;  
+    height:1.5em;  
+} 
+
+section.pag1-scroll .ticker-title {  
+color: #000000;  
+text-transform: uppercase;  
+display:flex;  
+position:absolute;
+top: 5px; 
+}
+
+section.pag1-scroll .ticker-title span {  
+display: block;  
+margin-right:50px;
+font-family: "DM mono";
+}
+
