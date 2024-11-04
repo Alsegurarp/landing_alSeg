@@ -29,7 +29,33 @@ section.pag1{
     height: 80vh;
 }
 
+.texto-drag {
+    width: 350px;
+    padding: 0;
+    border: none;
+    transform-origin: center;
+    font-family: "Gochi Hand", cursive;
+    text-decoration: none;
+    font-size: 15px;
+    padding-bottom: 3px;
+    border-radius: 5px;
+    box-shadow: 0 2px 0 #494a4b;
+    background-color: #5cdb95;
+    position: absolute;
+    top:40px;
+    right: 200px;
+  }
+  
+  .texto-drag span {
+    background: #f1f5f8;
+    display: block;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: 2px solid #494a4b;
+  }
+  
 .draggable {
+    /*Who am i?*/
     width: 300px;
     height: 450px;
     background-color: #155C26;
@@ -43,26 +69,35 @@ section.pag1{
     cursor: grab;
     position: absolute; /* Necesario para mover libremente */
     flex-direction: column;
+    left: 228px;
+    top: 265px;
 }
 .draggable:nth-child(2){
+    /* skills */
     width: 300px;
-    height: 250px;
+    height: 350px;
     background-color: #E4E3CF;
     border-radius: 10px;
     border: 2px solid black;
     box-shadow: 4px 4px;
     justify-content: space-around;
+    left: 870px;
+    top: 300px;
 }
 .draggable:nth-child(3){
+    /* Experience */
     width: 300px;
-    height: 150px;
+    height: 250px;
     background-color: #155C26;
     border-radius: 10px;
     border: 2px solid black;
     box-shadow: 4px 4px;
     justify-content: space-around;
+    left: 870px;
+    top: 120px;
 }
 .draggable:nth-child(4){
+    /* Aditional */
     width: 300px;
     height: 300px;
     background-color: #E4E3CF;
@@ -70,15 +105,19 @@ section.pag1{
     border: 2px solid black;
     box-shadow: 4px 4px;
     justify-content: space-around;
+    left: 1200px;
+    top: 120px;
 }
 .draggable:nth-child(5){
     width: 300px;
-    height: 150px;
+    height: 250px;
     background-color: #155C26;
     border-radius: 10px;
     border: 2px solid black;
     box-shadow: 4px 4px;
     justify-content: space-around;
+    left: 229px;
+    top: 56px;
 }
 
 p.draggable1-p{
@@ -170,3 +209,53 @@ margin-right:50px;
 font-family: "DM mono";
 }
 
+section.pag2{
+height: 100vh;
+background-color: antiquewhite;
+width: 90%;
+padding: 0px 5% 0px 5%;
+display: block;
+justify-content: center;
+align-items: center;
+}
+div.pag2_contenedor1{
+    height: 30vh;
+    width: 100%;
+    background-color: red;
+    margin-bottom: 10px;
+}
+
+section.pag2-contenedor2{
+    display: grid;
+grid-template-columns: repeat(6, 1fr);
+grid-template-rows: repeat(5, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+height: 50vh;
+width: 100%;
+}
+
+div.pag2_contenedor2{
+    background-color: blue;
+    margin-right: 20px;
+    grid-area: 1 / 1 / 4 / 3;
+    margin-bottom: 10px;
+}
+
+div.pag2_contenedor3{
+    background-color: green;
+    grid-area: 1 / 3 / 4 / 5; 
+    margin-bottom: 10px;
+}
+
+div.pag2_contenedor4{
+    background-color: yellow;
+    grid-area: 1 / 5 / 6 / 7;
+    margin-left: 10px;
+}
+
+
+div.pag2_contenedor5{
+    background-color: gray;
+    grid-area: 4 / 1 / 6 / 5; 
+}
