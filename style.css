@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton+SC&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Rozha+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
 /*
 Declaracion de colores 
@@ -25,6 +26,11 @@ Declaracion de colores
     font-weight: 400;
     font-style: normal;
 }
+.anton-regular {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
 
 *{margin: 0;
 padding: 0;}
@@ -258,8 +264,6 @@ text-align: center;
 padding-bottom: 5px;
 }
 
-
-
 p.draggable1-p{
     width: 80%;
     margin-bottom: 5px;
@@ -282,7 +286,6 @@ p.draggable4-p{
     margin-bottom: 5px;
     margin-top: 5px;
 }
-
 
 .button {
     width: 100px;
@@ -361,7 +364,116 @@ div.pag2_contenedor1{
     box-shadow: 4px 4px 0 #987164;
     color: black;
     border-radius: 10px;
+    display: block;
+    align-content: center;
+    text-align: center;
 }
+
+.pag2_contenedor1_parent {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: 90%;
+    width: auto;
+    padding-bottom: 5px;
+    }
+    
+    .pag2_contenedor1_div1 { grid-area: 1 / 2 / 2 / 8;
+        font-family: "Anton", sans-serif;
+        font-size: 2.5rem;
+        color: black;
+    }
+    .pag2_contenedor1_div2 { grid-area: 2 / 3 / 3 / 7;
+        border-top: 4px solid black;
+        padding-top: 5px;
+    }
+    .pag2_contenedor1_div3 { grid-area: 4 / 2 / 8 / 5;
+        
+    }
+    .pag2_contenedor1_div4 { grid-area: 4 / 5 / 8 / 8;
+    }
+
+    .pag2_contenedor1_div2 p{
+        text-align: center;
+    }
+
+    .pag2_contenedor1_div4 p{
+        text-align: left;
+    }
+
+    div.pag2_contenedor2_grid, div.pag2_contenedor3_grid{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        height: 90%;
+        width: auto;
+        padding-bottom: 5px;
+        padding-top: 10px;
+    }
+
+    div.pag2_contenedor2_grid_div1, div.pag2_contenedor3_grid_div1{
+        grid-area: 1 / 2 / 2 / 5;
+    }
+
+    div.pag2_contenedor2_grid_div2, div.pag2_contenedor3_grid_div2{
+        grid-area: 2 / 2 / 4 / 5;
+    }
+
+    div.pag2_contenedor2_grid_div3, div.pag2_contenedor3_grid_div3{
+        grid-area: 4 / 2 / 6 / 5;
+    }
+
+    div.pag2_contenedor4_grid{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        height: 90%;
+        width: auto;
+        padding-bottom: 5px;
+        padding-top: 10px;
+    }
+    div.pag2_contenedor4_grid_div1{
+        grid-area: 1 / 2 / 2 / 5;
+    }
+    div.pag2_contenedor4_grid_div2{
+        grid-area: 2 / 2 / 5 / 5;
+    }
+    div.pag2_contenedor4_grid_div3{
+        grid-area: 5 / 2 / 8 / 5;
+    }
+
+
+    div.pag2_contenedor5_grid{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        height: 90%;
+        width: auto;
+        padding-bottom: 5px;
+        padding-top: 10px;
+    }
+
+    div.pag2_contenedor5_grid_div1{
+        grid-area: 1 / 2 / 2 / 5;
+    }
+    div.pag2_contenedor5_grid_div2{
+        grid-area: 2 / 2 / 4 / 5;
+    }
+    div.pag2_contenedor5_grid_div3{
+        grid-area: 4 / 2 / 6 / 5;
+    }
+
+
+
+
 
 section.pag2-contenedor2{
 display: grid;

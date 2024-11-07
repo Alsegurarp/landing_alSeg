@@ -49,3 +49,4 @@ const contenedor = document.querySelector(".ticker-title");
     contenedor.style.left = left + "px";},1000/60);
 
 
+///
