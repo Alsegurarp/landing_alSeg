@@ -612,6 +612,11 @@ div.pag2_contenedor5{
     align-items: center;
     justify-content: center;
 }
+div.pag2_contenedor5 h2{
+    font-family: "Anton", sans-serif;
+    font-size: 1.4rem;
+    padding-top: 1vh;
+}
 
 section.inter_pag2_pag3{
     display: inline-flex;
@@ -732,14 +737,53 @@ div.pag3_contenido_div_inner1, div.pag3_contenido_div_inner2, div.pag3_contenido
 }
 
 div.pag3_contenido_cajas1{
-    grid-area: 2 / 2 / 4 / 5;
+    grid-area: 3 / 2 / 4 / 5;
+    padding-top: 1vh
 }
 div.pag3_contenido_cajas2{
-    grid-area: 4 / 2 / 5 / 5;
+    grid-area: 1 / 2 / 5 / 5;
 }
 div.pag3_contenido_cajas3{
-    grid-area: 5 / 2 / 8 / 5;
+    grid-area: 4 / 2 / 8 / 5;
+    padding-top: 1vh;
+    width: 80%;
 }
+
+
+div.pag3_contenido_div_inner1 div.pag3_contenido_cajas1 img, div.pag3_contenido_div_inner2 div.pag3_contenido_cajas1 img, div.pag3_contenido_div_inner3 div.pag3_contenido_cajas1 img{
+    width: 25vh;
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: 4px 4px 0 #987164;
+}
+
+div.pag3_contenido_cajas1 p, div.pag3_contenido_cajas2 p, div.pag3_contenido_cajas3 p{
+    font-family: "Funnel Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.1rem;
+    background-color: white;
+    border-radius: 6px;
+    border: 2px solid black;
+    box-shadow: 4px 4px 2px black;
+    padding: 0.2vh;
+}
+
+
+div.pag3_contenido_cajas2 h2{
+    font-family: "Anton", sans-serif;
+    font-size: 1.4rem;
+    padding-top: 1vh;
+}
+
+
+
+
+
 
 section.pag4{
     height: 100vh;
@@ -850,4 +894,3 @@ div.pag4_contenido_caja2_parent, div.pag4_contenido_caja3_parent, div.pag4_conte
     height: 28vh;
     padding-top: 2vh;
 }
-
