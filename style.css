@@ -645,7 +645,7 @@ div.pag3_text h2.pag3_text_projects{
     text-align: -webkit-center;
     position: relative;
     left: 0vh;
-    bottom: 30vh;
+    bottom: 28vh;
     font-weight: 400;
 }
 
@@ -675,10 +675,44 @@ div.pag3_contenedor1{
     box-shadow: 4px 4px 0 #987164;
     color: black;
     border-radius: 10px;
-    display: block;
+    display: grid;
     align-content: center;
     text-align: center;
 }
+section.pag3_contenedor1_divs{
+display: grid;
+grid-template-columns: 5vh repeat(7, 1fr) 5vh;
+grid-template-rows: 5vh repeat(4, 1fr) 5vh;
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
+div.pag3_contenido1_div1{
+    grid-area: 2 / 2 / 6 / 5;
+}
+div.pag3_contenido1_div2{
+    grid-area: 2 / 5 / 3 / 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.pag3_contenido1_div3{
+    grid-area: 3 / 5 / 6 / 9;
+}
+div.pag3_contenido1_div2_sub{
+    display: flex;
+    max-width: 5vh;
+    padding-left: 5vh;
+}
+div.pag3_contenido1_div2_sub a img{
+    width: 80%;
+}
+div.pag3_contenido1_div3{
+text-align: center;
+padding-top: 2vh;
+}
+
+
+
 div.pag3_contenedor2{
     display: grid;
     grid-template-columns: repeat(9, 1fr);
@@ -738,15 +772,28 @@ div.pag3_contenido_div_inner1, div.pag3_contenido_div_inner2, div.pag3_contenido
 
 div.pag3_contenido_cajas1{
     grid-area: 3 / 2 / 4 / 5;
-    padding-top: 1vh
+    padding-top: 1vh;
+    justify-self: center;
 }
 div.pag3_contenido_cajas2{
-    grid-area: 1 / 2 / 5 / 5;
+    grid-area: 1 / 2 / 2 / 5;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 div.pag3_contenido_cajas3{
-    grid-area: 4 / 2 / 8 / 5;
-    padding-top: 1vh;
+    grid-area: 4 / 2 / 9 / 6;
     width: 80%;
+    background-color: white;
+    border-radius: 6px;
+    border: 2px solid black;
+    box-shadow: 4px 4px 2px black;
+    padding: 0.5vh;
+}
+
+div.pag3_contenido_cajas2 img{
+    width: 70%;
 }
 
 
@@ -766,11 +813,6 @@ div.pag3_contenido_cajas1 p, div.pag3_contenido_cajas2 p, div.pag3_contenido_caj
     font-weight: 400;
     font-style: normal;
     font-size: 1.1rem;
-    background-color: white;
-    border-radius: 6px;
-    border: 2px solid black;
-    box-shadow: 4px 4px 2px black;
-    padding: 0.2vh;
 }
 
 
@@ -779,10 +821,6 @@ div.pag3_contenido_cajas2 h2{
     font-size: 1.4rem;
     padding-top: 1vh;
 }
-
-
-
-
 
 
 section.pag4{
