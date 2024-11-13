@@ -186,8 +186,8 @@ section.pag1{
   
 .draggable {
     /*Who am i?*/
-    width: 16%;
-    height: 400px;
+    width: 14vw;
+    height: 40vh;
     border-radius: 10px;
     border: 2px solid black;
     box-shadow: 4px 4px;
@@ -200,61 +200,44 @@ section.pag1{
     flex-direction: column;
     padding: 10px;
     text-align-last: center;
+    background-color: #f1eede;
     left: 10%;
     top: 20%;
 }
 
 .draggable:nth-child(2){
-    /* Aditional */
-    width: 16%;
-    height: 360px;
-    border-radius: 10px;
-    border: 2px solid black;
-    box-shadow: 4px 4px;;
-    top: 51%;
-    left: 32%;
+    cursor: grab;
+    top: 48%;
+    left: 75%;
+    background-color: #ed97df;
 }
 
 .draggable:nth-child(3){
-    /* E-Commerce solution */
-    width: 16%;
-    height: 320px;
-    border-radius: 10px;
-    border: 2px solid black;
-    box-shadow: 4px 4px;
-    top: 12%;
-    left: 32%;
+    cursor: grab;
+    left: 62%;
+    top: 10%;
 }
 
 .draggable:nth-child(4){
-    /* Aditional */
-    width: 16%;
-    height: 320px;
-    border-radius: 10px;
-    border: 2px solid black;
-    box-shadow: 4px 4px;
-    top: 12%;
-    left: 52%;
+    cursor: grab;
+    left: 48%;
+    top: 48%;
+    background-color: #7ea1c4;
 }
 
 .draggable:nth-child(5){
-    width: 16%;
-    height: 360px;
-    border-radius: 10px;
-    border: 2px solid black;
-    box-shadow: 4px 4px;
-    top: 51%;
-    left: 52%;
+    cursor: grab;
+    left: 35%;
+    top: 10%;
+    background-color: #ed97df;
 }
 
 .draggable, .draggable:nth-child(3), .draggable:nth-child(5){
-    background-color: #f1eede;
     border: 2px solid black;
     box-shadow: 4px 4px 0 #987164;
     color: black;
 }
 .draggable:nth-child(2), .draggable:nth-child(4){
-    background-color:#ed97df;
     border: 2px solid black;
     box-shadow: 4px 4px 0 #987164;
 }
@@ -271,11 +254,11 @@ div.draggable_contenido img{
 }
 
 div.draggable_contenido p{
-font-family: "DM Mono", monospace;
-font-size: 12px;
-width: 80%;
-text-align: center;
-padding-bottom: 5px;
+        font-family: "Funnel Sans", serif;
+        font-size: 1.2rem;
+        width: 85%;
+        text-align: center;
+        padding-top: 1vh;
 }
 
 p.draggable1-p{
@@ -382,11 +365,13 @@ section.pag2 h2.pag2_introduction1{
 }
 
 section.pag2 p{
+    text-align: left;
+    padding-left: 1vh;
     font-family: "Funnel Sans", serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    font-size: 1rem;
+    font-size: 1.3rem;
 }
 
 
@@ -418,7 +403,7 @@ div.pag2_contenedor1{
     .pag2_contenedor1_div1 { 
         grid-area: 2 / 3 / 4 / 7;
         font-family: "Anton", sans-serif;
-        font-size: 2rem;
+        font-size: 1.8rem;
         color: black;
     }
     .pag2_contenedor1_div2 { 
@@ -439,6 +424,11 @@ div.pag2_contenedor1{
     .pag2_contenedor1_div3 p{
         text-align: left;
         padding-left: 1vh;
+        font-family: "Funnel Sans", serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1.2rem;
     }
 
     div.pag2_contenedor2_grid{
@@ -470,7 +460,7 @@ div.pag2_contenedor1{
     }
     div.pag2_contenedor2_grid_div1 h2, div.pag2_contenedor3_grid_div1 h2, div.pag2_contenedor4_grid_div1 h2{
         font-family: "Anton", sans-serif;
-        font-size: 1.4rem;
+        font-size: 1.8rem;
         padding-top: 1vh;
     }
 
@@ -507,6 +497,7 @@ div.pag2_contenedor1{
 
     div.pag2_contenedor3_grid_div3{
         grid-area: 2 / 1 / 5 / 4;
+        padding-top: 3vh;
     }
 
     div.pag2_contenedor4_grid{
@@ -529,7 +520,7 @@ div.pag2_contenedor1{
         margin: auto;
     }
     div.pag2_contenedor4_grid_div3{
-        grid-area: 2 / 2 / 5 / 4;
+        grid-area: 2 / 2 / 5 / 5;
         padding-top: 2vh;
     }
 
@@ -557,6 +548,7 @@ div.pag2_contenedor1{
     div.pag2_contenedor5_grid_div3{
         grid-area: 2 / 3 / 5 / 6;
         padding-top: 2vh;
+        width: 90%;
     }
 
 section.pag2-contenedor2{
@@ -619,7 +611,7 @@ div.pag2_contenedor5{
 }
 div.pag2_contenedor5 h2{
     font-family: "Anton", sans-serif;
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     padding-top: 1vh;
 }
 
@@ -659,7 +651,7 @@ div.pag3_text img.pag3_text_hand{
     left: 2vh;
     top: 223vh;
     position: absolute;
-    width: 34%;
+    width: 27%;
 }
 
 
@@ -687,7 +679,7 @@ div.pag3_contenedor1{
 section.pag3_contenedor1_divs{
 display: grid;
 grid-template-columns: 5vh repeat(7, 1fr) 5vh;
-grid-template-rows: 5vh repeat(3, 1fr) 5vh;
+grid-template-rows: 5vh repeat(3, 1fr);
 grid-column-gap: 0px;
 grid-row-gap: 0px;
 }
@@ -702,24 +694,25 @@ div.pag3_contenido1_div2{
     align-items: center;
 }
 
+div.pag3_contenido1_div2 h2{
+font-family: "Anton", sans-serif;
+font-size: 2.1rem;
+padding-top: 1vh;
+font-weight: 500;
+text-align: center;}
+
 div.pag3_contenido1_div3{
     width: 100%;
-    background-color: white;
-    border-radius: 6px;
-    border: 2px solid black;
-    box-shadow: 4px 4px 2px black;
     padding: 0.5vh 1vh;
     grid-area: 3 / 5 / 4 / 9;
-    text-align: left;
-
 }
+
 div.pag3_contenido1_div3 p{
     font-family: "Funnel Sans", serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    font-size: 1.1rem;
-}
+    font-size: 1.4rem;}
 
 
 div.pag3_contenido1_div2_sub{
@@ -731,22 +724,21 @@ div.pag3_contenido1_div2_sub a img{
     width: 80%;
 }
 div.pag3_contenido1_div3{
-text-align: center;
-padding-top: 2vh;
+    text-align: left;
+    width: 90%;
 }
-
-
 
 div.pag3_contenedor2{
     display: grid;
     grid-template-columns: repeat(9, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 18vh);
     grid-column-gap: 15px;
     grid-row-gap: 0px;
     height: 45vh;
     width: 100%;
     margin-top: 5vh;
 }
+
 div.pag3_contenedor2_div1{
     grid-area: 1 / 1 / 4 / 4;
     background-color: #f1eede;
@@ -784,37 +776,37 @@ div.pag3_contenedor2_div3{
 
 /* Contenido de las cajitas de la pag 3, distribucion con grid */
 div.pag3_contenido_div_inner1, div.pag3_contenido_div_inner2, div.pag3_contenido_div_inner3{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 20px repeat(6, 1fr) 20px;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    height: 90%;
-    width: auto;
-    padding-bottom: 5px;
-    padding-top: 10px;
+display: grid;
+grid-template-columns: repeat(5, 1fr);
+grid-template-rows: repeat(8, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+height: 100%;
+width: auto;
+padding-bottom: 5px;
+padding-top: 10px;
 }
 
 div.pag3_contenido_cajas1{
-    grid-area: 3 / 2 / 4 / 5;
-    padding-top: 1vh;
+    grid-area: 2 / 2 / 4 / 5;
     justify-self: center;
 }
+
 div.pag3_contenido_cajas2{
     grid-area: 1 / 2 / 2 / 5;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
+#pag3_contenido_cajas2_id_1{
+    grid-area: 1 / 1 / 2 / 6;
+}
+
 div.pag3_contenido_cajas3{
-    grid-area: 4 / 2 / 9 / 6;
+    grid-area: 6 / 2 / 8 / 6;
     width: 80%;
-    background-color: white;
-    border-radius: 6px;
-    border: 2px solid black;
-    box-shadow: 4px 4px 2px black;
-    padding: 0.5vh;
+    padding-top: 1vh;
 }
 
 div.pag3_contenido_cajas2 img{
@@ -823,14 +815,20 @@ div.pag3_contenido_cajas2 img{
 
 
 
-div.pag3_contenido1_div1 img,div.pag3_contenido_div_inner1 div.pag3_contenido_cajas1 img, div.pag3_contenido_div_inner2 div.pag3_contenido_cajas1 img, div.pag3_contenido_div_inner3 div.pag3_contenido_cajas1 img{
+div.pag3_contenido1_div1 img,div.pag3_contenido_div_inner1 div.pag3_contenido_cajas1 img{
     width: 25vh;
     height: auto;
-    max-width: 100%;
-    object-fit: cover;
     border-radius: 10px;
-    border: 2px solid black;
-    box-shadow: 4px 4px 0 #987164;
+}
+
+div.pag3_contenido_div_inner2 div.pag3_contenido_cajas1 img{
+    width: 27vh;}
+
+div.pag3_contenido_div_inner3 div.pag3_contenido_cajas1 img {
+    width: 30vh;}
+
+#pag3_contenido_cajas2_id3{
+    grid-area: 1 / 1 / 2 / 6;
 }
 
 div.pag3_contenido_cajas1 p, div.pag3_contenido_cajas2 p, div.pag3_contenido_cajas3 p{
@@ -838,14 +836,14 @@ div.pag3_contenido_cajas1 p, div.pag3_contenido_cajas2 p, div.pag3_contenido_caj
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    font-size: 1.1rem;
+    font-size: 1.4rem;
 }
-
 
 div.pag3_contenido_cajas2 h2{
     font-family: "Anton", sans-serif;
-    font-size: 1.4rem;
-    padding-top: 1vh;
+    font-size: 2.1rem;
+    font-weight: 500;
+    text-align: center;
 }
 
 
@@ -885,7 +883,7 @@ div.contenedor_pag4 h2.header_contenedor{
         font-family: "Anton", sans-serif;
         font-size: 6rem;
         color: black;
-        left: 50vh;
+        left: 57vh;
         bottom: 90vh;
         position: relative;
 }
@@ -1060,4 +1058,6 @@ button.button_caja3_div4{
   .arrowContainer_caja3_div4 svg {
     vertical-align: middle;
   }
+
+  
   

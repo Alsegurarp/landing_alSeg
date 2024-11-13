@@ -50,3 +50,35 @@ const contenedor = document.querySelector(".ticker-title");
 
 
 ///
+/*
+let botones_caja3 = document.querySelectorAll(".button_caja3_div4")
+botones_caja3.forEach((button) => {
+    button.addEventListener("click", (event) => {
+      event.preventDefault();
+      window.location.href = "mailto:alsegurarp@gmail.com?subject=Hello, i would like to hire your services as Web Developer&body=Hi, I would like to contact you!";
+    });
+  });
+  */
+
+  let boton_caja3 = document.querySelectorAll(".button_caja3_div4")
+  boton_caja3.forEach((button) => {
+    button.addEventListener("click", (event) => {
+        event.preventDefault();
+    const email = "alsegurarp@gmail.com";
+    const subject = "I would like to hire your services as Web Developer";
+    const body = "Hi, I would like to contact you to build my website!";
+    const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${subject}&body=${body}`;
+    window.open(gmailUrl, "_blank");
+  })
+});
+
+/*
+  addEventListener("click", (event) => {
+    event.preventDefault();
+    const email = "alsegurarp@gmail.com";
+    const subject = "I would like to hire your services as Web Developer";
+    const body = "Hi, I would like to contact you to build my website!";
+    const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${subject}&body=${body}`;
+    window.open(gmailUrl, "_blank");
+  });
+  */
