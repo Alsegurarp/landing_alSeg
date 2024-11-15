@@ -636,7 +636,7 @@ div.svg-container{
 
 div.pag3_text h2.pag3_text_projects{
     font-family: "Anton", sans-serif;
-    font-size: 6rem;
+    font-size: 5.6rem;
     color: white;
     text-align: center;
     text-align: -webkit-center;
@@ -714,7 +714,6 @@ div.pag3_contenido1_div3 p{
     font-style: normal;
     font-size: 1.4rem;}
 
-
 div.pag3_contenido1_div2_sub{
     display: flex;
     max-width: 5vh;
@@ -727,6 +726,12 @@ div.pag3_contenido1_div3{
     text-align: left;
     width: 90%;
 }
+
+div.contenedor_padre_contenido_pag3{
+    display: flex;
+    justify-content: center;
+}
+
 
 div.pag3_contenedor2{
     display: grid;
@@ -861,12 +866,13 @@ div.intersection_pag4 img{
 
 section.container_pag4{
     display: block;
-    height: auto;
+    height: 100vh;
     background-color: #F4C846;
     padding-top: 10vh;
     justify-content: center;
     width: 100%;
 }
+   
 
 div.contenedor_padre_contenido_pag4{
     display: flex;
@@ -1100,9 +1106,12 @@ button.button_caja3_div4{
     div.draggable_contenido p {
         font-family: "Funnel Sans", serif;
         font-size: 1rem;}
-        .pag2_contenedor1_div1 h2{
-            font-family: "Anton", sans-serif;
-            font-size: 1.6rem;}
+
+    div.pag2_contenedor1_div1 h2 {
+        font-family: "Anton", sans-serif;
+        font-size: 2.4rem;}
+
+    
        
 }
 
@@ -1142,22 +1151,59 @@ button.button_caja3_div4{
         font-family: "Anton", sans-serif;
         font-size: 1.2rem;
         color: black;}
+    
 
     div.pag2_contenedor1_div3 {
             grid-area: 3 / 3 / 4 / 7;
             padding-left: 5vh;
             padding-right: 10vh;}
 
-    div.pag2_contenedor2_grid_div1 h2, div.pag2_contenedor3_grid_div1 h2, div.pag2_contenedor4_grid_div1 h2, div.pag2_contenedor5 h2 {
+    div.pag2_contenedor2_grid_div1 h2, div.pag2_contenedor3_grid_div1 h2, div.pag2_contenedor4_grid_div1 h2, div.pag2_contenedor5 h2, div.pag2_contenedor1_div1 h2{
         font-family: "Anton", sans-serif;
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         padding-top: 1vh;}
+    
+    
+            
+        
 }
 
 @media (max-width: 1440px){
+
+    div.pag2_contenedor1_div2 {
+        grid-area: 1 / 1 / 3 / 4;
+        width: 26vh;}
+
+    div.pag2_contenedor2_grid_div2 {
+        width: 8em;}
+    
+    div.pag2_contenedor3_grid_div2 {
+        width: 10em;}
+    
+    div.pag2_contenedor5_grid_div2 {
+        width: 7em;}
+
+    div.pag2_contenedor4_grid_div2 {
+        width: 16vh;}
+
+    div.pag3_contenido_cajas1 {
+        grid-area: 2 / 2 / 4 / 5;
+        justify-self: center;
+        background-size: cover;}
+
+
     section.pag2 p {
         font-size: 1rem;
     }
+    div.pag3_contenido_cajas3 {
+        grid-area: 6 / 1 / 8 / 6;
+        width: 85%;
+        padding-top: 1vh;
+        padding-left: 3vh;}
+    
+    div.pag2_contenedor1 {
+        height: 20vh;}
+
     div.contenedor_pag4 {
         display: grid;
         grid-template-columns: repeat(6, 19vh);
@@ -1168,22 +1214,248 @@ button.button_caja3_div4{
         width: auto;
         padding-top: 15vh;}
 
-        div.contenedor_pag4 {
-            display: grid;
-            grid-template-columns: repeat(6, 18vh);
-            grid-template-rows: repeat(1, 12vh);
-            grid-column-gap: 5vh;
-            grid-row-gap: 2vh;
-            height: 65vh;
-            width: auto;
-            padding-top: 15vh;}
+    div.contenedor_pag4 {
+        display: grid;
+        grid-template-columns: repeat(6, 18vh);
+        grid-template-rows: repeat(1, 12vh);
+        grid-column-gap: 3vh;
+        grid-row-gap: 1vh;
+        height: 55vh;
+        width: auto;
+        padding-top: 10vh;}
         
     div.pag4_contenido_caja1_div4, div.pag4_contenido_caja2_div4, div.pag4_contenido_caja3_div4 {
         grid-area: 6 / 2 / 7 / 5;
         padding-top: 3vh;}
+
+    section.pag4 p {
+        font-family: "Funnel Sans", serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1.3rem;}
+
+
+}
+
+@media (max-width: 1360px){
+
+    section.pag2 h2.pag2_introduction1 {
+        font-family: "Anton", sans-serif;
+        font-size: 5rem;}
+
+    section.pag2 {
+        height: 95vh;}
+        
+    section.pag2 p {
+        font-size: 0.9rem;
+    }
+
+    div.pag3_text img.pag3_text_hand {
+        transform: rotate(45deg);
+        left: 2vh;
+        top: 230vh;}
+    
+    div.pag3_text h2.pag3_text_projects {
+        font-family: "Anton", sans-serif;
+        font-size: 5rem;
+        bottom: 25vh;}
+
+    div.contenedor_padre_contenido_pag4 {
+        display: flex;
+        justify-content: center;
+        background-color: #F4C846;}
+
+    section.pag3 {
+        height: 95vh;
+        text-align: -webkit-center;}
+
+    div.pag3_contenido_div_inner3 div.pag3_contenido_cajas1 img {
+        background-size: cover;
+        width: 100%;}
+
+            
+
+}
+
+@media (max-width: 1200px){
+
+    section.pag2 {
+        padding-top: 15vh;
+        padding-bottom: 5vh;}
+
+    section.pag2 h2.pag2_introduction1 {
+        font-size: 4rem;
+    }
+
+    section.pag2 p {
+        font-size: 0.8rem;
+    }
+
+    div.pag3_text img.pag3_text_hand {
+        top: 235vh;}
+
+    div.pag3_text h2.pag3_text_projects {
+        font-family: "Anton", sans-serif;
+        font-size: 3.8rem;
+        bottom: 15vh;}
+
+    div.pag3_contenido_cajas1 p, div.pag3_contenido_cajas2 p, div.pag3_contenido_cajas3 p, div.pag3_contenido1_div3 p{
+        font-family: "Funnel Sans", serif;
+        font-size: 1.1rem;
+        text-align: left;}
+
+
+    div.contenedor_pag4 {
+        display: grid;
+        grid-template-columns: repeat(6, 14vh);
+        grid-template-rows: repeat(1, 12vh);}
+    
+    div.pag4_contenido_caja1_div1 h2, div.pag4_contenido_caja2_div1 h2, div.pag4_contenido_caja3_div1 h2, div.pag4_contenido_caja4_div1 h2 {
+        font-family: "Anton", sans-serif;
+        font-size: 1.6rem;
+        padding-top: 1vh;
+        font-weight: 500;
+        text-align: center;}
+    
+    section.pag4 p {
+        font-size: 1.1rem;}
+    
+    div.pag4_contenido_caja1_div4, div.pag4_contenido_caja2_div4, div.pag4_contenido_caja3_div4 {
+        grid-area: 6 / 1 / 7 / 5;
+        padding-top: 0vh;
+        padding-left: 3vh;}
+
+    
+    
+    div.bgContainer_caja3_div4 {
+        font-size: 1.5em;
+        max-width: 38%;}
+    
+    
+
 }
 
 
+@media (max-width: 1150px){
+    div.pag2_contenedor2_grid_div2 {
+        width: 7em;}
+
+    div.pag2_contenedor2_grid_div1 h2, div.pag2_contenedor3_grid_div1 h2, div.pag2_contenedor4_grid_div1 h2, div.pag2_contenedor5 h2, div.pag2_contenedor1_div1 h2 {
+        font-size: 1rem;
+        padding-top: 1vh;}
+    
+    div.pag2_contenedor2_grid_div3 {
+        grid-area: 2 / 4 / 6 / 7;
+        padding-top: 0vh;}
+    
+    div.pag2_contenedor2_grid_div2 img, div.pag2_contenedor3_grid_div2 img, div.pag2_contenedor4_grid_div2 img, div.pag2_contenedor5_grid_div2 img {
+            width: 80%;}
+
+    div.pag3_text img.pag3_text_hand {
+        top: 232vh;}
+
+    div.pag3_text h2.pag3_text_projects {
+        font-family: "Anton", sans-serif;
+        font-size: 3.4rem;
+        bottom: 15vh;}
+
+    div.pag3_contenido_div_inner3 div.pag3_contenido_cajas1 img {
+        background-size: cover;
+        width: 20vh;}
+    
+    div.pag3_contenido_cajas2 h2, div.pag3_contenido1_div2 h2 {
+        font-family: "Anton", sans-serif;
+        font-size: 1.4rem;}
+    
+    
+}
+@media (max-width: 1000px){
+
+    div.pag2_contenedor2_grid_div1 h2, div.pag2_contenedor3_grid_div1 h2, div.pag2_contenedor4_grid_div1 h2, div.pag2_contenedor5 h2, div.pag2_contenedor1_div1 h2 {
+        font-size: 0.8rem;
+        padding-top: 1vh;}
+
+
+    section.pag2 p {
+        font-size: 0.7rem;
+        padding-top: 0;
+        padding-left: 0;}
+
+    div.pag2_contenedor3_grid {
+        display: grid;
+        grid-template-columns: repeat(7, 4vh);
+        grid-template-rows: repeat(5, 6vh);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        width: auto;
+        padding-bottom: 0%; 
+        padding-top: 0%; 
+        padding-left: 5%;}
+
+    section.pag2-contenedor2 {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(5, 10vh);}
+        
+
+}
+
+
+@media (max-width: 950px){
+
+    div.pag2_contenedor3_grid {
+        padding-left: 2%;}
+    
+    div.pag2_contenedor3_grid_div3 {
+        grid-area: 2 / 1 / 5 / 4;
+        padding-top: 2vh;}
+    
+    div.pag2_contenedor1_div2 {
+        grid-area: 1 / 1 / 3 / 4;
+        width: 22vh;}
+    
+    div.pag2_contenedor3_grid_div2 {
+        width: 7em;}
+
+    section.pag2 h2.pag2_introduction1 {
+        font-size: 3.5rem;
+    }
+
+    div.pag3_contenido1_div1 img, div.pag3_contenido_div_inner1 div.pag3_contenido_cajas1 img {
+        width: 20vh;
+        height: auto;}    
+
+    div.pag3_contenido_cajas3 {
+        padding-top: 3vh;
+        padding-left: 3vh;}
+
+    div.contenedor_pag4 {
+        display: grid;
+        grid-template-columns: repeat(6, 12vh);}
+    
+
+    div.pag4_contenido_caja1_parent, div.pag4_contenido_caja2_parent, div.pag4_contenido_caja3_parent {
+    display: grid;
+    grid-template-columns: repeat(5, 5vh);
+    grid-template-rows: repeat(6, 8vh) 3vh;}
+
+    section.pag4 p {
+        font-size: 1rem;
+    }
+
+    div.pag4_contenido_caja1_div4, div.pag4_contenido_caja2_div4, div.pag4_contenido_caja3_div4 {
+        grid-area: 6 / 1 / 7 / 5;
+        padding-top: 0vh;
+        padding-left: 2vh;}
+
+
+}
+@media (max-width: 810px){
+
+
+
+}
 
 
 
