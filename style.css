@@ -51,16 +51,14 @@ body{
     background-color: rgba(126,161,196,1);
 }
 
-section.header{
+section.header {
     height: 2%;
     width: 100%;
     background-color: #1b161b;
     text-align: center;
     position: sticky;
-    top: 0vh;
-    z-index: 5;
-
-}
+    z-index: 2;
+    top: -5px}
 
 nav.header_nav ul{
     display: grid;
@@ -1240,6 +1238,9 @@ button.button_caja3_div4{
 
 @media (max-width: 1360px){
 
+    div.texto-drag {
+        width: 24vw;}
+
     section.pag2 h2.pag2_introduction1 {
         font-family: "Anton", sans-serif;
         font-size: 5rem;}
@@ -1293,7 +1294,8 @@ button.button_caja3_div4{
     }
 
     div.pag3_text img.pag3_text_hand {
-        top: 235vh;}
+        top: 218vh;    
+    }
 
     div.pag3_text h2.pag3_text_projects {
         font-family: "Anton", sans-serif;
@@ -1308,7 +1310,7 @@ button.button_caja3_div4{
 
     div.contenedor_pag4 {
         display: grid;
-        grid-template-columns: repeat(6, 14vh);
+        grid-template-columns: repeat(6, 13vh);
         grid-template-rows: repeat(1, 12vh);}
     
     div.pag4_contenido_caja1_div1 h2, div.pag4_contenido_caja2_div1 h2, div.pag4_contenido_caja3_div1 h2, div.pag4_contenido_caja4_div1 h2 {
@@ -1326,18 +1328,33 @@ button.button_caja3_div4{
         padding-top: 0vh;
         padding-left: 3vh;}
 
-    
-    
     div.bgContainer_caja3_div4 {
         font-size: 1.5em;
         max-width: 38%;}
-    
-    
-
 }
 
-
 @media (max-width: 1150px){
+
+
+    .draggable {
+        width: 18vw;
+        height: 35vh;}  
+
+    div.draggable_contenido img {
+        height: 15vh;
+    }
+
+    div.draggable_contenido p {
+        font-size: 0.8rem;
+        padding-top: 0vh;
+    }
+
+    .texto-drag span {
+        padding: 0.2rem 0.1rem;
+        border-radius: 5px;
+        border: 2px solid #494a4b;
+        font-size: 12px;}
+
     div.pag2_contenedor2_grid_div2 {
         width: 7em;}
 
@@ -1353,11 +1370,11 @@ button.button_caja3_div4{
             width: 80%;}
 
     div.pag3_text img.pag3_text_hand {
-        top: 232vh;}
+        top: 215vh;}
 
     div.pag3_text h2.pag3_text_projects {
         font-family: "Anton", sans-serif;
-        font-size: 3.4rem;
+        font-size: 3rem;
         bottom: 15vh;}
 
     div.pag3_contenido_div_inner3 div.pag3_contenido_cajas1 img {
@@ -1372,10 +1389,30 @@ button.button_caja3_div4{
 }
 @media (max-width: 1000px){
 
+    div.pag3_text img.pag3_text_hand {
+        top: 186vh;
+    }
+
+    section.pag2-contenedor2 {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 8vh 8vh 8vh 6vh 7vh;
+    }
+
+    section.pag2 {
+        padding-top: 15vh;
+        padding-bottom: 0vh;
+        height: 75vh;
+    }
+
+
+    div.texto-drag{
+        display: none;
+    }
+
     div.pag2_contenedor2_grid_div1 h2, div.pag2_contenedor3_grid_div1 h2, div.pag2_contenedor4_grid_div1 h2, div.pag2_contenedor5 h2, div.pag2_contenedor1_div1 h2 {
         font-size: 0.8rem;
         padding-top: 1vh;}
-
 
     section.pag2 p {
         font-size: 0.7rem;
@@ -1392,17 +1429,34 @@ button.button_caja3_div4{
         padding-bottom: 0%; 
         padding-top: 0%; 
         padding-left: 5%;}
-
-    section.pag2-contenedor2 {
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(5, 10vh);}
         
-
 }
 
 
 @media (max-width: 950px){
+
+
+
+    div.pag2_contenedor2_grid_div3 {
+        grid-area: 2 / 3 / 6 / 7;
+        padding-top: 0vh;}
+    
+    div.pag2_contenedor2_grid_div2 {
+        width: 10em;
+        height: 5rem;
+        margin: auto;
+        grid-area: 4 / 4 / 6 / 4;}
+
+    section.header {
+        height: 7vh;}
+
+    nav.header_nav ul {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(3, 3vh);}
+
+    nav.header_nav ul li a.header_nav_a {
+        font-size: 1rem;}
 
     div.pag2_contenedor3_grid {
         padding-left: 2%;}
@@ -1434,6 +1488,11 @@ button.button_caja3_div4{
         display: grid;
         grid-template-columns: repeat(6, 12vh);}
     
+    div.contenedor0_5_pag4 h2.header_contenedor {
+        font-family: "Anton", sans-serif;
+        font-size: 4.5rem;
+        color: black;
+        position: relative;}
 
     div.pag4_contenido_caja1_parent, div.pag4_contenido_caja2_parent, div.pag4_contenido_caja3_parent {
     display: grid;
@@ -1449,14 +1508,66 @@ button.button_caja3_div4{
         padding-top: 0vh;
         padding-left: 2vh;}
 
+}
+@media (max-width: 830px){
+
+    div.pag2_contenedor3_grid_div2 {
+        grid-area: 1 / 3 / 4 / 8;
+        padding-top: 2vh;
+        width: 7em;}
+
+
+    div.pag2_contenedor2_grid_div1 h2, div.pag2_contenedor3_grid_div1 h2, div.pag2_contenedor4_grid_div1 h2, div.pag2_contenedor5 h2, div.pag2_contenedor1_div1 h2 {
+        font-size: 0.8rem;
+        padding-top: 1vh;
+        padding-left: 1vh;
+    }
+
+    section.pag2 p {
+        font-size: 0.7rem;
+        padding-top: 0;
+        padding-left: 1vh;
+    }
+
+    div.contenedor_pag4 {
+        display: grid;
+        grid-template-columns: repeat(6, 10vh);
+    }
+
+    div.pag4_contenido_caja1_parent, div.pag4_contenido_caja2_parent, div.pag4_contenido_caja3_parent {
+        display: grid;
+        grid-template-columns: repeat(5, 4vh);
+        grid-template-rows: repeat(6, 8vh) 3vh;
+    }
+
+    div.pag4_contenido_caja1_div1 h2, div.pag4_contenido_caja2_div1 h2, div.pag4_contenido_caja3_div1 h2, div.pag4_contenido_caja4_div1 h2 {
+        font-family: "Anton", sans-serif;
+        font-size: 1.4rem;
+        padding-top: 0vh;}
+
+    section.pag4 p {
+        font-size: 0.9rem;}
+
+    div.bgContainer_caja3_div4 {
+        font-size: 1em;
+        max-width: 32%;}
+    
+    
 
 }
-@media (max-width: 810px){
 
+@media (max-width: 780px){
+    nav.header_nav ul li a.header_nav_a {
+        font-size: 0.8rem;}
 
+        div.pag2_contenedor3_grid_div2 {
+            grid-area: 1 / 2 / 4 / 8;
+            padding-top: 2vh;
+            width: 6em;}
+    
 
+    
 }
-
 
 
 
