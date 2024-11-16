@@ -1396,13 +1396,13 @@ button.button_caja3_div4{
     section.pag2-contenedor2 {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: 8vh 8vh 8vh 6vh 7vh;
+        grid-template-rows: 8vh 10vh 10vh 8vh 10vh;
     }
 
     section.pag2 {
         padding-top: 15vh;
         padding-bottom: 0vh;
-        height: 75vh;
+        height: 77vh;
     }
 
 
@@ -1429,11 +1429,28 @@ button.button_caja3_div4{
         padding-bottom: 0%; 
         padding-top: 0%; 
         padding-left: 5%;}
+
+    div.pag2_contenedor2_grid {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(5, 5vh);}
+
+    div.pag2_contenedor2_grid_div2 {
+        width: 6em;
+        height: 5rem;
+        margin: auto;
+        grid-area: 5 / 6 / 6 / 7;}
+
+    
+
         
 }
 
 
 @media (max-width: 950px){
+
+    div.pag2_contenedor3_grid_div1 {
+        grid-area: 1 / 1 / 3 / 5;}
 
 
 
@@ -1511,6 +1528,11 @@ button.button_caja3_div4{
 }
 @media (max-width: 830px){
 
+    div.draggable_contenido h2 {
+        color: black;
+        font-size: 1.2em;
+    }
+
     div.pag2_contenedor3_grid_div2 {
         grid-area: 1 / 3 / 4 / 8;
         padding-top: 2vh;
@@ -1524,7 +1546,7 @@ button.button_caja3_div4{
     }
 
     section.pag2 p {
-        font-size: 0.7rem;
+        font-size: 1rem;
         padding-top: 0;
         padding-left: 1vh;
     }
@@ -1546,33 +1568,298 @@ button.button_caja3_div4{
         padding-top: 0vh;}
 
     section.pag4 p {
-        font-size: 0.9rem;}
+        font-size: 1rem;}
 
     div.bgContainer_caja3_div4 {
         font-size: 1em;
         max-width: 32%;}
+    
+    div.pag3_contenido_cajas3 {
+       grid-area: 5 / 1 / 8 / 6;
+        width: 85%;
+        padding-top: 0vh;
+        padding-left: 2vh;}
+
+    div.pag3_contenido_cajas1 {
+        grid-area: 2 / 2 / 4 / 5;
+        justify-self: center;
+        background-size: cover;
+        clip-path: fill-box;}
+
     
     
 
 }
 
 @media (max-width: 780px){
+
+    div.pag2_contenedor2_grid_div1 h2, div.pag2_contenedor3_grid_div1 h2, div.pag2_contenedor4_grid_div1 h2, div.pag2_contenedor5 h2, div.pag2_contenedor1_div1 h2 {
+        font-size: 1.1rem;}
+
+        section.pag2 p {
+            font-size: 0.8rem;}
+
     nav.header_nav ul li a.header_nav_a {
         font-size: 0.8rem;}
 
-        div.pag2_contenedor3_grid_div2 {
-            grid-area: 1 / 2 / 4 / 8;
-            padding-top: 2vh;
-            width: 6em;}
+    div.pag2_contenedor3_grid_div2 {
+        grid-area: 1 / 2 / 4 / 8;
+        padding-top: 2vh;
+        width: 6em;}
     
+    div.pag3_contenido_div_inner3 div.pag3_contenido_cajas1 img {
+        background-size: cover;
+        width: 18vh;}
+    
+    div.pag3_contenido_div_inner2 div.pag3_contenido_cajas1 img {
+        width: 22vh;}
+
+    div.pag3_contenido1_div1 img, div.pag3_contenido_div_inner1 div.pag3_contenido_cajas1 img {
+        width: 16vh;
+        height: auto;}
+
+    div.pag3_contenido_cajas2 h2, div.pag3_contenido1_div2 h2 {
+            font-family: "Anton", sans-serif;
+            font-size: 1.6rem;}
+
+    div.pag3_contenedor2 {
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-rows: repeat(3, 15vh);
+        grid-column-gap: 15px;}
+
+    section.pag2 {
+        padding-top: 15vh;
+        padding-bottom: 0vh;
+        height: 80vh;}
+
+    div.pag3_text img.pag3_text_hand {
+        top: 190vh;}
+
+    section.pag2 h2.pag2_introduction1 {
+        font-size: 3rem;}
+
 
     
 }
 
+@media (max-width: 730px){
+    div.pag3_contenido_div_inner3 div.pag3_contenido_cajas1 img {
+        background-size: cover;
+        width: 16vh;
+    }
+
+    div.contenedor_pag4 {
+        display: grid;
+        grid-template-columns: repeat(6, 9vh);
+    }
+
+    div.pag4_contenido_caja1_div4, div.pag4_contenido_caja2_div4, div.pag4_contenido_caja3_div4 {
+        padding-left: 1vh;
+    }
+    section.pag3 {
+        height: 83vh;}
+
+
+}
+
+
+@media (max-width: 700px){
+    section.pag2 h2.pag2_introduction1, div.pag3_text h2.pag3_text_projects {
+        font-size: 2.6rem;
+    }
+
+    div.draggable {
+        width: 20vw;
+        height: 34vh;
+    }
+
+    div.draggable:nth-child(2) {
+        cursor: grab;
+        left: 70%;}
+    
+    div.draggable:nth-child(4) {
+            cursor: grab;
+            left: 40%;
+            top: 48%;}
+    
+    section.pag2-contenedor2{
+        display: inline-block;}
+                
+    section.pag2{
+        padding-top: 15vh;
+        padding-bottom: 0vh;
+        height: 150vh;}
+
+    div.pag3_text img.pag3_text_hand {
+        top: 253vh;}
+                
+    div.pag2_contenedor2 {
+        background-color: #f1eede;
+        margin-right: 0;}
+
+    div.pag2_contenedor1_div3 {
+        grid-area: 3 / 4 / 4 / 7;
+        padding-left: 0vh;
+        padding-right: 2vh;
+        padding-top: 1vh;}
+    
+    div.pag2_contenedor2_grid, div.pag2_contenedor3_grid, div.pag2_contenedor4_grid, div.pag2_contenedor5_grid{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(5, 5vh);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        height: 90%;
+        width: 90%;
+        padding-bottom: 5px;
+        padding-top: 10px;}
+
+    div.pag2_contenedor4{
+        margin-left: 0px;
+        margin-bottom: 10px;}
+
+    div.pag2_contenedor1 {
+            height: 25vh;}
+    
+    div.pag2_contenedor2_grid_div1 h2, div.pag2_contenedor3_grid_div1 h2, div.pag2_contenedor4_grid_div1 h2, div.pag2_contenedor5 h2, div.pag2_contenedor1_div1 h2 {
+        font-size: 1.5rem;}
+
+    div.pag2_contenedor2_grid_div3, div.pag2_contenedor3_grid_div3, div.pag2_contenedor4_grid_div3, div.pag2_contenedor5_grid_div3 {
+        grid-area: 3 / 4 / 6 / 7;
+        padding-top: 0vh;
+        padding-left: 0vw;}
+                
+    div.pag2_contenedor2_grid_div1, div.pag2_contenedor3_grid_div1, div.pag2_contenedor4_grid_div1, div.pag2_contenedor5_grid_div1{
+        grid-area: 1 / 3 / 3 / 7;}
+                
+    div.pag2_contenedor1_div2, div.pag2_contenedor2_grid_div2, div.pag2_contenedor3_grid_div2, div.pag2_contenedor4_grid_div2, div.pag2_contenedor5_grid_div2 {
+            width: 10em;
+            height: 5rem;
+            margin: auto;
+            grid-area: 1 / 1 / 5 / 4;}
+    
+    div.pag2_contenedor2_grid_div3, div.pag2_contenedor3_grid_div3, div.pag2_contenedor4_grid_div3, div.pag2_contenedor5_grid_div3{
+        grid-area: 2 / 4 / 6 / 7;
+        padding-top: 4vh;
+        padding-left: 5vw;
+        }
+
+    div.pag2_contenedor1_div2 img, div.pag2_contenedor2_grid_div2 img, div.pag2_contenedor3_grid_div2 img, div.pag2_contenedor4_grid_div2 img, div.pag2_contenedor5_grid_div2 img {
+        width: 80%;}
+    
+    section.pag2 p {
+        font-size: 0.9rem;}
+
+    section.pag3 {
+        height: 135vh;}
+
+    div.pag3_contenedor2 {
+        display: inline-block;
+        margin-top: 0vh;}
+
+    div.pag3_contenido_div_inner1, div.pag3_contenido_div_inner2, div.pag3_contenido_div_inner3 {
+        display: grid;
+        grid-template-columns: repeat(5, 12vh);
+        grid-template-rows: repeat(6, 5vh);}
+
+    div.pag3_contenido_cajas2 {
+        grid-area: 1 / 2 / 2 / 5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;}
+    
+    div.pag3_contenido_cajas3 {
+        grid-area: 4 / 2 / 8 / 5;
+        width: 100%;
+        padding-top: 2vh;
+        padding-left: 2vh;}
+
+    div.pag3_contenido1_div1 {
+        grid-area: 2 / 2 / 5 / 5;
+        padding-top: 1vh;}
+
+    div.pag3_contenido1_div2_sub {
+        display: flex;
+        max-width: 5vh;
+        padding-left: 0vh;
+        align-items: center;}
+
+    section.container_pag4 {
+        display: block;
+        height: 170vh;}
+
+    div.contenedor_pag4 {
+        display: inline-block;}
+
+    div.pag4_contenido_caja1_parent, div.pag4_contenido_caja2_parent, div.pag4_contenido_caja3_parent {
+        display: grid;
+        grid-template-columns: repeat(5, 7vh);
+        grid-template-rows: repeat(6, 6vh) 3vh;}
+
+    div.pag4_contenido_caja1_div4, div.pag4_contenido_caja2_div4, div.pag4_contenido_caja3_div4 {
+        grid-area: 6 / 2 / 7 / 5;}
+
+    section.pag4 p {
+        font-size: 1.1rem;}
+
+    div.pag4_contenido_caja1_div1 h2, div.pag4_contenido_caja2_div1 h2, div.pag4_contenido_caja3_div1 h2, div.pag4_contenido_caja4_div1 h2 {
+        font-size: 1.5rem;}
+
+    div.pag3_text h2.pag3_text_projects {
+        bottom: 10vh;}
+
+    div.pag3_text img.pag3_text_hand {
+        top: 258vh;}
+
+}
+
+
+
+
+
+@media (max-width: 620px){
+
+
+
+
+
+}
+
+
+
+
+@media (max-width: 580px){
+
+
+    section.pag2 p {
+        font-size: 0.8rem;
+    }
+
+    div.pag2_contenedor2_grid_div1 h2, div.pag2_contenedor3_grid_div1 h2, div.pag2_contenedor4_grid_div1 h2, div.pag2_contenedor5 h2, div.pag2_contenedor1_div1 h2 {
+        font-size: 1rem;
+    }
+
+    div.pag2_contenedor1_div1 {
+        grid-area: 1 / 3 / 3 / 7;}
+
+    div.pag2_contenedor2_grid_div1, div.pag2_contenedor3_grid_div1, div.pag2_contenedor4_grid_div1, div.pag2_contenedor5_grid_div1 {
+        grid-area: 1 / 4 / 3 / 7;}
+
+    div.pag2_contenedor1_div3 {
+        grid-area: 3 / 3 / 4 / 7;
+        padding-top: 2vh;
+        padding-right: 2vh;}
+}
+
+
+
+
 
 
   /* Mobile */
-  @media (max-width: 480px) {
+  @media (max-width: 450px) {
     /* Adjust styles here */
 
 }
