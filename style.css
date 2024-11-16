@@ -1081,6 +1081,12 @@ button.button_caja3_div4{
     vertical-align: middle;
   }
 
+  div.draggable:nth-child(6){
+    cursor: grab;
+    left: 76%;
+    top: 46%;
+}
+
 /* 1700 primer breaking point */
 @media (max-width: 1700px) {
     /* Adjust styles here */
@@ -1284,7 +1290,7 @@ button.button_caja3_div4{
         background-size: cover;
         width: 100%;}
     
-
+    
             
 
 }
@@ -1348,7 +1354,8 @@ button.button_caja3_div4{
 
     .draggable {
         width: 18vw;
-        height: 35vh;}  
+        height: 35vh;
+    }  
 
     div.draggable_contenido img {
         height: 15vh;
@@ -1649,7 +1656,6 @@ button.button_caja3_div4{
     section.pag2 h2.pag2_introduction1 {
         font-size: 3rem;}
 
-
     
 }
 
@@ -1669,12 +1675,25 @@ button.button_caja3_div4{
     }
     section.pag3 {
         height: 83vh;}
+    
 
 
 }
+@media (min-width: 700px) and (max-width: 1150px){
+    div.draggable:nth-child(6) {
+        cursor: grab;
+        left: 68%;
+        top: 48%;
+    }
+    
+    div.draggable:nth-child(4) {
+            cursor: grab;
+            left: 40%;
+            top: 48%;}
+}
 
 
-@media (max-width: 700px){
+@media (max-width: 699px){
     section.pag2 h2.pag2_introduction1, div.pag3_text h2.pag3_text_projects {
         font-size: 2.6rem;
     }
@@ -2239,6 +2258,4 @@ div.pag3_contenido_div_inner1, div.pag3_contenido_div_inner2, div.pag3_contenido
             bottom: 8vh;
         }
     
-            
-
 }
