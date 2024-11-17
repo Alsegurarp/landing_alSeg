@@ -642,9 +642,6 @@ div.svg-container{
 }
 
 div.pag3_text h2.pag3_text_projects{
-    font-family: "Anton", sans-serif;
-    font-size: 5.6rem;
-    color: white;
     text-align: center;
     text-align: -webkit-center;
     position: relative;
@@ -652,6 +649,13 @@ div.pag3_text h2.pag3_text_projects{
     bottom: 28vh;
     font-weight: 400;
 }
+
+div.pag3_text h2.pag3_text_projects, div.contenedor0_5_pag4 h2.header_contenedor{
+    font-family: "Anton", sans-serif;
+    font-size: 5.6rem;
+    color: white;}
+
+    
 
 div.pag3_text img.pag3_text_hand{
     transform: rotate(45deg);
@@ -902,13 +906,6 @@ div.contenedor0_5_pag4{
     width: auto;
     text-align: center;
     text-align: -webkit-center;
-}
-
-div.contenedor0_5_pag4 h2.header_contenedor{
-        font-family: "Anton", sans-serif;
-        font-size: 6rem;
-        color: black;
-        position: relative;
 }
 
 
@@ -1311,6 +1308,19 @@ button.button_caja3_div4{
             
 
 }
+@media (min-width: 1200px) and (max-width: 1360px){
+
+    div.pag3_text h2.pag3_text_projects, div.contenedor0_5_pag4 h2.header_contenedor{
+        font-family: "Anton", sans-serif;
+        font-size: 5rem;
+        color: white;
+    }
+
+    div.pag3_text h2.pag3_text_projects{
+        bottom: 25vh;
+    }
+
+}
 
 @media (max-width: 1200px){
 
@@ -1544,11 +1554,8 @@ button.button_caja3_div4{
         display: grid;
         grid-template-columns: repeat(6, 12vh);}
     
-    div.contenedor0_5_pag4 h2.header_contenedor {
-        font-family: "Anton", sans-serif;
-        font-size: 4.5rem;
-        color: black;
-        position: relative;}
+
+    
 
     div.pag4_contenido_caja1_parent, div.pag4_contenido_caja2_parent, div.pag4_contenido_caja3_parent {
     display: grid;
@@ -1560,7 +1567,7 @@ button.button_caja3_div4{
     }
 
     div.pag4_contenido_caja1_div4, div.pag4_contenido_caja2_div4, div.pag4_contenido_caja3_div4 {
-        grid-area: 6 / 1 / 7 / 5;
+        grid-area: 6 / 2 / 7 / 5;
         padding-top: 0vh;
         padding-left: 1vh;}
 
@@ -1618,7 +1625,8 @@ button.button_caja3_div4{
 
     div.bgContainer_caja3_div4 {
         font-size: 1em;
-        max-width: 32%;}
+        max-width: 35%;
+    }
     
     div.pag3_contenido_cajas3 {
        grid-area: 5 / 1 / 8 / 6;
@@ -1723,10 +1731,14 @@ button.button_caja3_div4{
 
 
 @media (max-width: 699px){
-    section.pag2 h2.pag2_introduction1, div.pag3_text h2.pag3_text_projects {
-        font-size: 2.6rem;
-    }
 
+    div.pag3_text h2.pag3_text_projects {
+        bottom: 10vh;}
+
+        h2.header_contenedor section.pag2 h2.pag2_introduction1, div.pag3_text h2.pag3_text_projects{
+        font-size: 2.6rem;
+        color: white;}
+    
     div.draggable {
         width: 20vw;
         height: 34vh;
@@ -1870,8 +1882,8 @@ button.button_caja3_div4{
     div.pag4_contenido_caja1_div1 h2, div.pag4_contenido_caja2_div1 h2, div.pag4_contenido_caja3_div1 h2, div.pag4_contenido_caja4_div1 h2 {
         font-size: 1.5rem;}
 
-    div.pag3_text h2.pag3_text_projects {
-        bottom: 10vh;}
+    
+
 
     div.pag3_text img.pag3_text_hand {
         top: 230vh;
@@ -2010,8 +2022,10 @@ button.button_caja3_div4{
         height: 155vh;
     }
 
-    section.pag2 h2.pag2_introduction1, div.pag3_text h2.pag3_text_projects {
+    section.pag2 h2.pag2_introduction1, div.pag3_text h2.pag3_text_projects, div.contenedor0_5_pag4 h2.header_contenedor, section.pag2 h2.pag2_introduction1, div.pag3_text h2.pag3_text_projects{
         font-size: 2rem;
+        color: white;
+        position: relative;
     }
 
     div.pag3_text img.pag3_text_hand {
@@ -2111,9 +2125,10 @@ button.button_caja3_div4{
             height: 140px;
             width: auto;}
 
-    section.pag2 h2.pag2_introduction1, div.pag3_text h2.pag3_text_projects {
-        font-size: 1.6rem;}
-    
+    div.contenedor0_5_pag4 h2.header_contenedor, section.pag2 h2.pag2_introduction1, div.pag3_text h2.pag3_text_projects {
+        font-size: 1.6rem;
+        color: white;}
+
     div.pag3_text img.pag3_text_hand {
         top: 227vh;}
 
