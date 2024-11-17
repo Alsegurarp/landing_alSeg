@@ -1863,8 +1863,7 @@ button.button_caja3_div4{
             border: 1px solid #ccc; /* Optional: for visibility */
             padding: 10px; /* Optional: spacing inside the div */
             text-align: center;
-            display: flex;
-            align-items: center;}
+            display: block;}
     
     div.draggable{
                     padding: 15px; /* Add spacing inside each item */
