@@ -878,6 +878,7 @@ section.container_pag4{
     padding-top: 10vh;
     justify-content: center;
     width: 100%;
+    padding-bottom: 5vh;
 }
    
 
@@ -1924,10 +1925,11 @@ div.pag3_contenido_div_inner1, div.pag3_contenido_div_inner2, div.pag3_contenido
         grid-area: 1 / 4 / 3 / 7;}
 
     div.pag2_contenedor1_div3 {
-        grid-area: 1 / 2 / 3 / 7;
-        padding-top: 2vh;
-        padding-right: 2vh;
-        padding-left: 0vh;}
+            grid-area: 3 / 4 / 4 / 7;
+            padding-left: 0vh;
+            padding-right: 2vh;
+            padding-top: 1vh;
+        }
     
 
     div.pag3_contenido_cajas1 p, div.pag3_contenido_cajas2 p, div.pag3_contenido_cajas3 p, div.pag3_contenido1_div3 p {
@@ -2113,10 +2115,26 @@ div.pag3_contenido_div_inner1, div.pag3_contenido_div_inner2, div.pag3_contenido
     nav.header_nav ul li:nth-child(2), nav.header_nav ul li:nth-child(3), nav.header_nav ul li:nth-child(4) {
         display: grid;}
 
+    div.pag2_contenedor1_div1 {
+            grid-area: 1 / 2 / 3 / 7;
+        }
+
+    div.pag2_contenedor1_div3 {
+        grid-area: 2 / 4 / 5 / 7;
+        padding-top: 2vh;
+        padding-right: 2vh;
+        padding-left: 0vh;}
+
 }
 
 
 @media (max-width: 380px){
+
+
+    .pag2_contenedor1_parent {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(4, 1fr);}
 
     div.pag4_contenido_caja1_parent, div.pag4_contenido_caja2_parent, div.pag4_contenido_caja3_parent {
         display: grid;
@@ -2135,16 +2153,17 @@ div.pag3_contenido_div_inner1, div.pag3_contenido_div_inner2, div.pag3_contenido
         margin: auto;
         grid-area: 1 / 1 / 5 / 4;
     }
+
+    
+
     nav.header_nav ul li:nth-child(2), nav.header_nav ul li:nth-child(3), nav.header_nav ul li:nth-child(4) {
         display: none;
     }
 
     div.pag2_contenedor2_grid, div.pag2_contenedor3_grid, div.pag2_contenedor4_grid, div.pag2_contenedor5_grid {
         display: grid;
-        grid-template-columns: repeat(6, 4vh);
+        grid-template-columns: repeat(6, 5vh);
         grid-template-rows: repeat(5, 4vh);
-        grid-column-gap: 0px;
-        grid-row-gap: 0px;
         height: 90%;
         width: 90%;
         padding-bottom: 5px;
@@ -2168,6 +2187,9 @@ div.pag3_contenido_div_inner1, div.pag3_contenido_div_inner2, div.pag3_contenido
         font-size: 0.75rem;
         padding-left: 0vh;
         padding-top: 0vh;
+    }
+    div.pag2_contenedor2_grid_div1, div.pag2_contenedor3_grid_div1, div.pag2_contenedor4_grid_div1, div.pag2_contenedor5_grid_div1 {
+        grid-area: 1 / 2 / 3 / 8;
     }
 
     div.pag1_responsive-div {
