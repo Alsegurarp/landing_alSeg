@@ -973,7 +973,7 @@ div.pag4_contenido_caja1_div4, div.pag4_contenido_caja2_div4, div.pag4_contenido
 div.pag4_contenido_caja1_parent, div.pag4_contenido_caja2_parent, div.pag4_contenido_caja3_parent{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(7, 8vh);
+    grid-template-rows: repeat(7, 9vh);
     grid-column-gap: 0px;
     grid-row-gap: 10px;
     width: auto;
@@ -982,7 +982,7 @@ div.pag4_contenido_caja1_parent, div.pag4_contenido_caja2_parent, div.pag4_conte
 
 div.pag4_contenido_caja1_div1 h2, div.pag4_contenido_caja2_div1 h2, div.pag4_contenido_caja3_div1 h2, div.pag4_contenido_caja4_div1 h2{
     font-family: "Anton", sans-serif;
-    font-size: 2.1rem;
+    font-size: 1.8rem;
     padding-top: 1vh;
     font-weight: 500;
     text-align: center;  
@@ -1175,8 +1175,17 @@ button.button_caja3_div4{
         font-family: "Anton", sans-serif;
         font-size: 1.4rem;
         padding-top: 1vh;}
+
+    section.container_pag4 {
+            padding-bottom: 5vh;}
     
-    
+    section.pag4 p {
+        font-size: 1.2rem;}
+
+    div.pag4_contenido_caja1_div1 h2, div.pag4_contenido_caja2_div1 h2, div.pag4_contenido_caja3_div1 h2, div.pag4_contenido_caja4_div1 h2 {
+        font-size: 1.8rem;}
+        
+        
             
         
 }
@@ -1585,7 +1594,7 @@ button.button_caja3_div4{
         padding-top: 0vh;}
 
     section.pag4 p {
-        font-size: 1rem;}
+        font-size: 0.9rem;}
 
     div.bgContainer_caja3_div4 {
         font-size: 1em;
@@ -1736,7 +1745,7 @@ button.button_caja3_div4{
     div.pag2_contenedor2_grid, div.pag2_contenedor3_grid, div.pag2_contenedor4_grid, div.pag2_contenedor5_grid{
         display: grid;
         grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(5, 5vh);
+        grid-template-rows: repeat(5, 4vh);
         grid-column-gap: 0px;
         grid-row-gap: 0px;
         height: 90%;
@@ -1768,11 +1777,10 @@ button.button_caja3_div4{
             margin: auto;
             grid-area: 1 / 1 / 5 / 4;}
     
-    div.pag2_contenedor2_grid_div3, div.pag2_contenedor3_grid_div3, div.pag2_contenedor4_grid_div3, div.pag2_contenedor5_grid_div3{
+    div.pag2_contenedor2_grid_div3, div.pag2_contenedor3_grid_div3, div.pag2_contenedor4_grid_div3, div.pag2_contenedor5_grid_div3 {
         grid-area: 2 / 4 / 6 / 7;
-        padding-top: 4vh;
-        padding-left: 5vw;
-        }
+        padding-top: 0vh;
+        padding-left: 3vw;}
 
     div.pag2_contenedor1_div2 img, div.pag2_contenedor2_grid_div2 img, div.pag2_contenedor3_grid_div2 img, div.pag2_contenedor4_grid_div2 img, div.pag2_contenedor5_grid_div2 img {
         width: 80%;}
@@ -1817,7 +1825,7 @@ button.button_caja3_div4{
 
     section.container_pag4 {
         display: block;
-        height: 170vh;}
+        height: 175vh;}
 
     div.contenedor_pag4 {
         display: inline-block;}
@@ -1831,7 +1839,7 @@ button.button_caja3_div4{
         grid-area: 6 / 2 / 7 / 5;}
 
     section.pag4 p {
-        font-size: 1.1rem;}
+        font-size: 1rem;}
 
     div.pag4_contenido_caja1_div1 h2, div.pag4_contenido_caja2_div1 h2, div.pag4_contenido_caja3_div1 h2, div.pag4_contenido_caja4_div1 h2 {
         font-size: 1.5rem;}
@@ -1880,22 +1888,12 @@ button.button_caja3_div4{
                         margin: 10px auto;
                         position: absolute;
                         top: 6vh;
-                        left: 33vh;}
+                        left: 64%;}
 
     div.pag1_responsive-div img {
                             height: 180px;
                             width: auto;}
 }
-
-@media (min-width: 600px) and (max-width:700px){
-    div.pag1_responsive-div {
-        left: 41vh;
-    }
-}
-
-
-
-
 
 @media (max-width: 620px){
 
@@ -1905,12 +1903,7 @@ div.pag3_contenido_div_inner1, div.pag3_contenido_div_inner2, div.pag3_contenido
         grid-template-rows: repeat(6, 5vh);
     }
 
-
-
-
 }
-
-
 
 
 @media (max-width: 580px){
@@ -1931,10 +1924,11 @@ div.pag3_contenido_div_inner1, div.pag3_contenido_div_inner2, div.pag3_contenido
         grid-area: 1 / 4 / 3 / 7;}
 
     div.pag2_contenedor1_div3 {
-        grid-area: 3 / 4 / 4 / 7;
+        grid-area: 1 / 2 / 3 / 7;
         padding-top: 2vh;
         padding-right: 2vh;
         padding-left: 0vh;}
+    
 
     div.pag3_contenido_cajas1 p, div.pag3_contenido_cajas2 p, div.pag3_contenido_cajas3 p, div.pag3_contenido1_div3 p {
         font-family: "Funnel Sans", serif;
@@ -1965,9 +1959,9 @@ div.pag3_contenido_div_inner1, div.pag3_contenido_div_inner2, div.pag3_contenido
     }
 
     div.pag3_contenido1_div3, div.pag3_contenido_cajas3 {
-        grid-area: 4 / 2 / 8 / 5;
-        width: 100%;
-        padding-top: 2vh;
+        grid-area: 4 / 1 / 8 / 6;
+        width: 90%;
+        padding-top: 1vh;
         padding-left: 2vh;
     }
 
@@ -1998,7 +1992,7 @@ div.pag3_contenido_div_inner1, div.pag3_contenido_div_inner2, div.pag3_contenido
         margin: 10px auto;
         position: absolute;
         top: 6vh;
-        left: 33vh;}
+        left: 62%;}
 
     div.pag1_responsive-div img{
         height: 155px;
@@ -2062,7 +2056,7 @@ div.pag3_contenido_div_inner1, div.pag3_contenido_div_inner2, div.pag3_contenido
 
     div.pag1_responsive-div {
             top: 6vh;
-            left: 28vh;}
+            left: 62%;}
     
 
     div.pag1_responsive-div img {
@@ -2110,7 +2104,7 @@ div.pag3_contenido_div_inner1, div.pag3_contenido_div_inner2, div.pag3_contenido
         margin: 10px auto;
         position: absolute;
         top: 6vh;
-        left: 28vh;}
+        left: 62%;}
 
     div.pag1_responsive-div img {
         height: 100px;
@@ -2127,7 +2121,7 @@ div.pag3_contenido_div_inner1, div.pag3_contenido_div_inner2, div.pag3_contenido
     div.pag4_contenido_caja1_parent, div.pag4_contenido_caja2_parent, div.pag4_contenido_caja3_parent {
         display: grid;
         grid-template-columns: repeat(5, 6vh);
-        grid-template-rows: repeat(6, 8vh) 3vh;
+        grid-template-rows: repeat(6, 6vh) 3vh;
     }
 
     section.container_pag4 {
@@ -2145,6 +2139,17 @@ div.pag3_contenido_div_inner1, div.pag3_contenido_div_inner2, div.pag3_contenido
         display: none;
     }
 
+    div.pag2_contenedor2_grid, div.pag2_contenedor3_grid, div.pag2_contenedor4_grid, div.pag2_contenedor5_grid {
+        display: grid;
+        grid-template-columns: repeat(6, 4vh);
+        grid-template-rows: repeat(5, 4vh);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        height: 90%;
+        width: 90%;
+        padding-bottom: 5px;
+        padding-top: 10px;
+    }
 
 
 
@@ -2166,7 +2171,7 @@ div.pag3_contenido_div_inner1, div.pag3_contenido_div_inner2, div.pag3_contenido
     }
 
     div.pag1_responsive-div {
-        left: 22vh;
+        left: 60%;
     }
 
 }
@@ -2193,10 +2198,10 @@ div.pag3_contenido_div_inner1, div.pag3_contenido_div_inner2, div.pag3_contenido
     }
 
     div.pag2_contenedor1_div2, div.pag2_contenedor2_grid_div2, div.pag2_contenedor3_grid_div2, div.pag2_contenedor4_grid_div2, div.pag2_contenedor5_grid_div2 {
-        width: 8em;
+        width: 6em;
         height: 4rem;
         margin: auto;
-        grid-area: 1 / 1 / 5 / 4;
+        grid-area: 2 / 1 / 5 / 4;
     }
 
     nav.header_nav ul li:nth-child(2), nav.header_nav ul li:nth-child(3), nav.header_nav ul li:nth-child(4) {
@@ -2212,10 +2217,12 @@ div.pag3_contenido_div_inner1, div.pag3_contenido_div_inner2, div.pag3_contenido
     div.pag2_contenedor2_grid_div3, div.pag2_contenedor3_grid_div3, div.pag2_contenedor4_grid_div3, div.pag2_contenedor5_grid_div3 {
             grid-area: 2 / 4 / 6 / 7;
             padding-top: 3vh;
-            padding-left: 0vw;}
+            padding-left: 0vw;
+            width: 70%;}
 
     div.pag2_contenedor2_grid_div1, div.pag2_contenedor3_grid_div1, div.pag2_contenedor4_grid_div1, div.pag2_contenedor5_grid_div1 {
                 grid-area: 1 / 2 / 3 / 7;}
+
     
     div.pag3_contenido_div_inner1, div.pag3_contenido_div_inner2, div.pag3_contenido_div_inner3, section.pag3_contenedor1_divs {
         display: grid;
@@ -2236,7 +2243,7 @@ div.pag3_contenido_div_inner1, div.pag3_contenido_div_inner2, div.pag3_contenido
     div.pag4_contenido_caja1_parent, div.pag4_contenido_caja2_parent, div.pag4_contenido_caja3_parent {
             display: grid;
             grid-template-columns: repeat(5, 5vh);
-            grid-template-rows: repeat(6, 9vh) 3vh;
+            grid-template-rows: repeat(6, 8vh) 3vh;
         }
 
     div.pag4_contenido_caja1_div4, div.pag4_contenido_caja2_div4, div.pag4_contenido_caja3_div4 {
