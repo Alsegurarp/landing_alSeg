@@ -456,7 +456,7 @@ div.pag2_contenedor1{
 
     div.pag2_contenedor2_grid_div2{
         width: 10em;
-        height: 5rem;
+        height: 3rem;
         margin: auto;
         grid-area: 1 / 1 / 6 / 4;
     }
