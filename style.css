@@ -63,12 +63,12 @@ section.header {
 nav.header_nav ul{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 2vh);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     list-style-type: none;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 5vw;
+    padding-right: 5vw;
 }
 nav.header_nav ul li{
     grid-area: 2 / 1 / 3 / 2;
@@ -84,12 +84,12 @@ nav.header_nav ul li:nth-child(4){
     grid-area: 2 / 6 / 3 / 7; 
 }
 
-nav.header_nav ul li a.header_nav_a{
-        font-size: 20px;
-        font-family: "Abril Fatface", serif;
-        color: white;
-        font-weight: 400;
-        text-decoration: none;
+nav.header_nav ul li a.header_nav_a {
+    font-size: 0.9rem;
+    font-family: anton, sans-serif;
+    color: white;
+    font-weight: 400;
+    text-decoration: none;
 }
 
 nav.header_nav ul li a.animation_standar:hover{
@@ -188,13 +188,12 @@ section.pag1{
     padding: 0.5rem 1rem;
     border-radius: 5px;
     border: 2px solid #494a4b;
-    
-  }
+    font-family: "Funnel Sans", serif;
+}
   
 .draggable {
     /*Who am i?*/
     width: 14vw;
-    height: 40vh;
     border-radius: 10px;
     border: 2px solid black;
     box-shadow: 4px 4px;
@@ -225,11 +224,12 @@ section.pag1{
     top: 10%;
 }
 
-.draggable:nth-child(4){
+.draggable:nth-child(4) {
     cursor: grab;
     left: 48%;
-    top: 48%;
+    top: 46%;
     background-color: #7ea1c4;
+    width: 18vw;
 }
 
 .draggable:nth-child(5){
@@ -445,7 +445,7 @@ div.pag2_contenedor1{
         grid-column-gap: 0px;
         grid-row-gap: 0px;
         height: 90%;
-        width: 90%;
+        width: 100%;
         padding-bottom: 5px;
         padding-top: 10px;
     }
@@ -461,19 +461,18 @@ div.pag2_contenedor1{
         grid-area: 1 / 1 / 6 / 4;
     }
 
-    div.pag2_contenedor2_grid_div3{
-        grid-area: 2 / 4 / 6 / 7;
+    div.pag2_contenedor2_grid_div3 {
+        grid-area: 2 / 2 / 6 / 6;
         padding-top: 2vh;
     }
-    div.pag2_contenedor2_grid_div1 h2, div.pag2_contenedor3_grid_div1 h2, div.pag2_contenedor4_grid_div1 h2{
+    div.pag2_contenedor2_grid_div1 h2, div.pag2_contenedor3_grid_div1 h2, div.pag2_contenedor4_grid_div1 h2 {
         font-family: "Anton", sans-serif;
-        font-size: 1.8rem;
-        padding-top: 1vh;
-    }
+        font-size: 1.5rem;
+        padding-top: 1vh;}
 
     
     div.pag2_contenedor2_grid_div2 img, div.pag2_contenedor3_grid_div2 img, div.pag2_contenedor4_grid_div2 img, div.pag2_contenedor5_grid_div2 img{
-        width: 100%;
+        width: 80%;
         height: auto;
     }
     
@@ -494,13 +493,13 @@ div.pag2_contenedor1{
         grid-area: 1 / 1 / 3 / 8; 
     }
 
-    div.pag2_contenedor3_grid_div2{
-        grid-area: 1 / 4 / 4 / 8; 
+    div.pag2_contenedor3_grid_div2 {
+        grid-area: 3 / 4 / 4 / 8;
         padding-top: 2vh;
         width: 12em;
         height: 5rem;
-        margin: auto;
-    }
+        margin: auto;}
+    
 
     div.pag2_contenedor3_grid_div3{
         grid-area: 2 / 1 / 5 / 4;
@@ -690,7 +689,7 @@ div.pag3_contenedor1{
 section.pag3_contenedor1_divs{
     display: grid;
     grid-template-columns: 5vh repeat(7, 1fr);
-    grid-template-rows: repeat(6, 5vh);
+    grid-template-rows: repeat(4, 5vh);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
 }
@@ -794,7 +793,7 @@ div.pag3_contenedor2_div3{
 div.pag3_contenido_div_inner1, div.pag3_contenido_div_inner2, div.pag3_contenido_div_inner3{
 display: grid;
 grid-template-columns: repeat(5, 1fr);
-grid-template-rows: repeat(8, 1fr);
+grid-template-rows: repeat(7, 1fr);
 grid-column-gap: 0px;
 grid-row-gap: 0px;
 height: 100%;
@@ -822,7 +821,7 @@ div.pag3_contenido_cajas2{
 div.pag3_contenido_cajas3{
     grid-area: 6 / 2 / 8 / 6;
     width: 80%;
-    padding-top: 1vh;
+    padding-top: 0vh;
 }
 
 div.pag3_contenido_cajas2 img{
@@ -832,13 +831,13 @@ div.pag3_contenido_cajas2 img{
 
 
 div.pag3_contenido1_div1 img,div.pag3_contenido_div_inner1 div.pag3_contenido_cajas1 img{
-    width: 25vh;
+    width: 17vh;
     height: auto;
     border-radius: 10px;
 }
 
 div.pag3_contenido_div_inner2 div.pag3_contenido_cajas1 img{
-    width: 27vh;}
+    width: 22vh;}
 
 div.pag3_contenido_div_inner3 div.pag3_contenido_cajas1 img {
     width: 30vh;}
@@ -952,7 +951,7 @@ div.contenido_pag4_div4{
 
 
 div.pag4_contenido_caja1_div1, div.pag4_contenido_caja2_div1, div.pag4_contenido_caja3_div1{
-    grid-area: 1 / 2 / 2 / 5;
+    grid-area: 1 / 1 / 2 / 6;
 }
 div.pag4_contenido_caja1_div2, div.pag4_contenido_caja2_div2, div.pag4_contenido_caja3_div2{
     grid-area: 3 / 2 / 3 / 5;
@@ -993,7 +992,7 @@ section.pag4 p{
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 
 button.button_caja3_div4{
@@ -1112,7 +1111,7 @@ button.button_caja3_div4{
         font-weight: 400;
         font-style: normal;
         font-size: 1.2rem;
-        padding-top: 1vh;}
+        padding-top: 0vh;}
     
 }
 
@@ -1169,7 +1168,7 @@ button.button_caja3_div4{
 
     div.pag2_contenedor1_div3 {
             grid-area: 3 / 3 / 4 / 7;
-            padding-left: 5vh;
+            padding-left: 10vh;
             padding-right: 10vh;}
 
     div.pag2_contenedor2_grid_div1 h2, div.pag2_contenedor3_grid_div1 h2, div.pag2_contenedor4_grid_div1 h2, div.pag2_contenedor5 h2, div.pag2_contenedor1_div1 h2{
@@ -1195,19 +1194,19 @@ button.button_caja3_div4{
 
     div.pag2_contenedor1_div2 {
         grid-area: 1 / 1 / 3 / 4;
-        width: 26vh;}
+        width: 22vh;}
 
     div.pag2_contenedor2_grid_div2 {
         width: 8em;}
     
     div.pag2_contenedor3_grid_div2 {
-        width: 10em;}
+            width: 8em;}    
     
     div.pag2_contenedor5_grid_div2 {
         width: 7em;}
 
     div.pag2_contenedor4_grid_div2 {
-        width: 16vh;}
+            width: 14vh;}
 
     div.pag3_contenido_cajas1 {
         grid-area: 2 / 2 / 4 / 5;
@@ -1259,7 +1258,9 @@ button.button_caja3_div4{
         font-weight: 400;
         font-style: normal;
         font-size: 1.3rem;}
-    
+
+    div.pag2_contenedor3_grid_div2 {
+            grid-area: 3 / 4 / 4 / 8;}
     
 
 
@@ -1333,7 +1334,7 @@ button.button_caja3_div4{
     }
 
     section.pag2 p {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 
     div.pag3_text img.pag3_text_hand {
@@ -1351,6 +1352,18 @@ button.button_caja3_div4{
         text-align: left;
     }
 
+    section.container_pag4 {
+        display: block;
+        background-color: #F4C846;
+        padding-top: 10vh;
+        justify-content: center;
+        width: 100%;
+        padding-bottom: 5vh;}
+    
+    div.pag2_contenedor3_grid_div3 {
+            grid-area: 2 / 1 / 5 / 4;
+            padding-top: 5vh;}
+
 
 
     div.contenedor_pag4 {
@@ -1360,22 +1373,25 @@ button.button_caja3_div4{
     
     div.pag4_contenido_caja1_div1 h2, div.pag4_contenido_caja2_div1 h2, div.pag4_contenido_caja3_div1 h2, div.pag4_contenido_caja4_div1 h2 {
         font-family: "Anton", sans-serif;
-        font-size: 1.6rem;
+        font-size: 1.2rem;
         padding-top: 1vh;
         font-weight: 500;
         text-align: center;}
     
     section.pag4 p {
-        font-size: 1.1rem;}
+        font-size: 0.9rem;}
     
-    div.pag4_contenido_caja1_div4, div.pag4_contenido_caja2_div4, div.pag4_contenido_caja3_div4 {
-        grid-area: 6 / 1 / 7 / 5;
-        padding-top: 0vh;
-        padding-left: 1vh;}
+        div.pag4_contenido_caja1_div4, div.pag4_contenido_caja2_div4, div.pag4_contenido_caja3_div4 {
+            grid-area: 6 / 2 / 10 / 5;
+            padding-top: 0vh;
+            padding-left: 0vh;
+        }
+    
+        div.bgContainer_caja3_div4 {
+            font-size: 1em;
+            max-width: 31%;
+        }
 
-    div.bgContainer_caja3_div4 {
-        font-size: 1.5em;
-        max-width: 37%;}
 }
 
 @media (max-width: 1150px){
@@ -1405,18 +1421,18 @@ button.button_caja3_div4{
         width: 7em;}
 
     div.pag2_contenedor2_grid_div1 h2, div.pag2_contenedor3_grid_div1 h2, div.pag2_contenedor4_grid_div1 h2, div.pag2_contenedor5 h2, div.pag2_contenedor1_div1 h2 {
-        font-size: 1rem;
+        font-size: 0.9rem;
         padding-top: 1vh;}
     
     div.pag2_contenedor2_grid_div3 {
-        grid-area: 2 / 4 / 6 / 7;
+        grid-area: 2 / 2 / 3 / 7;
         padding-top: 0vh;}
     
     div.pag2_contenedor2_grid_div2 img, div.pag2_contenedor3_grid_div2 img, div.pag2_contenedor4_grid_div2 img, div.pag2_contenedor5_grid_div2 img {
             width: 80%;}
 
     div.pag3_text img.pag3_text_hand {
-        top: 215vh;}
+        display: none;}
 
     div.pag3_text h2.pag3_text_projects {
         font-family: "Anton", sans-serif;
@@ -1424,15 +1440,24 @@ button.button_caja3_div4{
         bottom: 15vh;}
 
     div.pag3_contenido_div_inner3 div.pag3_contenido_cajas1 img {
-        background-size: cover;
-        width: 20vh;}
+            background-size: cover;
+            width: 14vh;}
     
     div.pag3_contenido_cajas2 h2, div.pag3_contenido1_div2 h2 {
         font-family: "Anton", sans-serif;
         font-size: 1.4rem;}
     
-    
 }
+
+@media (min-width: 1000px){
+    div.pag2_contenedor2_grid_div2 {
+        margin: auto;
+        grid-area: 4 / 4 / 6 / 4;}
+
+
+}
+
+
 @media (max-width: 1000px){
 
     div.pag3_text img.pag3_text_hand {
@@ -1451,6 +1476,9 @@ button.button_caja3_div4{
         height: 77vh;
     }
 
+    
+    div.pag2_contenedor2_grid_div2 {
+        grid-area: 4 / 2 / 6 / 6;}
 
     div.texto-drag{
         display: none;
@@ -1465,16 +1493,21 @@ button.button_caja3_div4{
         padding-top: 0;
         padding-left: 0;}
 
+
+
+
     div.pag2_contenedor3_grid {
         display: grid;
-        grid-template-columns: repeat(7, 4vh);
-        grid-template-rows: repeat(5, 6vh);
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: repeat(5, 1fr);
         grid-column-gap: 0px;
         grid-row-gap: 0px;
         width: auto;
         padding-bottom: 0%; 
         padding-top: 0%; 
         padding-left: 5%;}
+
+        
 
     div.pag2_contenedor2_grid {
         display: grid;
@@ -1487,13 +1520,16 @@ button.button_caja3_div4{
         margin: auto;
         grid-area: 5 / 6 / 6 / 7;}
 
-    
+}
 
-        
+@media (min-width: 950px){
+    section.pag2 {
+        height: 80vh;
+    }
 }
 
 
-@media (max-width: 950px){
+@media (max-width: 949px){
 
         div.bgContainer_caja3_div4 {
         font-size: 1.5em;
@@ -1501,7 +1537,9 @@ button.button_caja3_div4{
     }
 
     div.pag2_contenedor3_grid_div1 {
-        grid-area: 1 / 1 / 3 / 5;}
+        grid-area: 1 / 2 / 3 / 7;
+        text-align: center;
+    }
 
     div.pag2_contenedor2_grid_div3 {
         grid-area: 2 / 3 / 6 / 7;
@@ -1528,8 +1566,9 @@ button.button_caja3_div4{
         padding-left: 2%;}
     
     div.pag2_contenedor3_grid_div3 {
-        grid-area: 2 / 1 / 5 / 4;
-        padding-top: 2vh;}
+            grid-area: 2 / 1 / 3 / 7;
+            padding-top: 1vh;
+        padding-left: 1vh;}
     
     div.pag2_contenedor1_div2 {
         grid-area: 1 / 1 / 3 / 4;
@@ -1543,12 +1582,12 @@ button.button_caja3_div4{
     }
 
     div.pag3_contenido1_div1 img, div.pag3_contenido_div_inner1 div.pag3_contenido_cajas1 img {
-        width: 20vh;
+        width: 15vh;
         height: auto;}    
 
     div.pag3_contenido_cajas3 {
-        padding-top: 3vh;
-        padding-left: 3vh;}
+            padding-top: 1vh;
+            padding-left: 1vh;}
 
     div.contenedor_pag4 {
         display: grid;
@@ -1886,12 +1925,11 @@ button.button_caja3_div4{
 
 
     div.pag3_text img.pag3_text_hand {
-        top: 230vh;
+        display: none;
     }
 
     section.pag1 {
             background-color: #f4c846;
-            height: 50vh;
             width: auto; /* Make it responsive */
             overflow-y: auto; /* Enable vertical scrolling */
             overflow-x: hidden; /* Prevent horizontal scrolling */
@@ -1921,6 +1959,11 @@ button.button_caja3_div4{
                     display: block; /* Show when the viewport is less than 580px */
                     text-align: center; /* Optional: Center the image */
                     margin: 10px auto; /* Optional: Add spacing */  }
+
+    div.draggable:nth-child(4){
+        width: 50vw;
+        height: 34vh;
+    }
 
     div.pag1_responsive-div {
                         display: flex;
