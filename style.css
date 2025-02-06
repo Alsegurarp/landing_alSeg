@@ -1238,7 +1238,7 @@ button.button_caja3_div4{
 
     div.contenedor_pag4 {
         display: grid;
-        grid-template-columns: repeat(6, 18vh);
+        grid-template-columns: repeat(6, 14vh);
         grid-template-rows: repeat(1, 12vh);
         grid-column-gap: 3vh;
         grid-row-gap: 1vh;
